@@ -1,0 +1,127 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tela_fundo"
+    tools:context=".DetalhesProdutosActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp" 
+        android:paddingRight="15dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp" >
+
+            <TextView
+                android:id="@+id/textViewNomeProduto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:text="@string/textViewNomeProduto"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textViewPreco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:paddingLeft="15dp"
+                android:text="@string/textViewPreco"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewDescricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:text="@string/textViewDescricao"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/textViewDetalhes"
+                android:layout_width="fill_parent"
+                android:layout_height="122dp"
+                android:text="@string/textViewDetalhes"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/textViewQuantidade"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/editTextQuantidade"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:background="@drawable/edit_text"
+                android:ems="10"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:text="@string/textView1" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/buttonMais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:background="@android:color/transparent"
+                android:onClick="onCLickMais"
+                android:paddingLeft="40dp"
+                android:text="@string/buttonMais"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/buttonMenos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:background="@android:color/transparent"
+                android:onClick="onClickMenos"
+                android:paddingLeft="15dp"
+                android:text="@string/buttonMenos"
+                android:textColor="#FFFFFF"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/buttonPedir"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botao"
+                android:onClick="clickConfirmaPedido"
+                android:text="@string/buttonConfirmarPedido" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

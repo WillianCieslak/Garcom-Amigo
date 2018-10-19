@@ -1,0 +1,19 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="30dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="@drawable/tela_fundo"
+    tools:context=".QuemSomosActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textViewQuemSomos"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</ScrollView>

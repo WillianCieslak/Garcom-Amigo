@@ -1,0 +1,173 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tela_fundo"
+    tools:context=".CadastroActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textViewNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textViewNomeCompleto"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextNomeCompleto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/edit_text"
+            android:ems="10"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textViewCpf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textViewCpf"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextCpf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/edit_text"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textViewDataNascimento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textViewDataNascimneto"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/editTextDataNascimento"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="left"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/edit_text"
+            android:ems="10"
+            android:onClick="editTextData"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/textViewCelular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textViewCelular"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextCelular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/edit_text"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textViewEmail"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/edit_text"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+<!--         <TextView -->
+<!--             android:id="@+id/textViewConfirmarEmail" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:text="@string/textViewConfirmarEmail" -->
+<!--             android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+
+<!--         <EditText -->
+<!--             android:id="@+id/editTextConfirmarEmail" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:ems="10" -->
+<!--             android:background="@drawable/edit_text" -->
+<!--             android:inputType="textEmailAddress" /> -->
+
+        <TextView
+            android:id="@+id/textViewSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textViewSenha"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/edit_text"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textViewConfirmarSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textViewConfirmarSenha"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextConfirmarSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/edit_text"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5pt" >
+
+            <Button
+                android:id="@+id/buttonCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/botao"
+                android:text="@string/buttonCancelar"
+                android:onClick="onClickCancelar"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:id="@+id/buttonNovoPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/botao"
+                android:text="@string/buttonContinuar"
+                android:onClick="onClickContinuar"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

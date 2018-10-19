@@ -1,0 +1,86 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tela_fundo"
+    tools:context=".CadastroActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="match_parent"
+            android:layout_height="100pt"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/imageViewLogo"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" >
+
+            <Button
+                android:id="@+id/buttonFacaSeuPedido"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/botao_menu"
+                android:onClick="onClickFacaSeuPedido"
+                android:text="@string/facaSeuPedido" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" >
+
+            <Button
+                android:id="@+id/buttonMeusPedidos"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/botao_menu"
+                android:onClick="onClickMeusPedidos"
+                android:text="@string/buttonMeusPedidos" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" >
+
+            <Button
+                android:id="@+id/buttonAlterarDados"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/botao_menu"
+                android:onClick="onCLickAlterar"
+                android:text="@string/alterarDados" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" >
+
+            <Button
+                android:id="@+id/buttonQuemSomos"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/botao_menu"
+                android:onClick="onClickQuemSomos"
+                android:text="@string/quemSomos" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

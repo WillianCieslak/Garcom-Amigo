@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tela_fundo"
+    tools:context="com.cliente.view.SelecionarMesaActivity"
+    tools:ignore="MergeRootFrame" 
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:paddingTop="30dp" >
+
+          <Spinner
+              android:id="@+id/spinner1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:entries="@array/mesa_array"
+              android:prompt="@string/prompt_mesa" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:paddingTop="30dp" >
+
+          <Button
+              android:id="@+id/buttonProsseguir"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/botao"
+              android:text="@string/buttonProsseguir"
+              android:onClick="onClickProsseguir" />
+
+      </LinearLayout>
+
+</LinearLayout>
+

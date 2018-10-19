@@ -1,0 +1,84 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tela_fundo"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="match_parent"
+            android:layout_height="100pt"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/imageViewLogo"
+            android:src="@drawable/ic_launcher" />
+
+        <EditText
+            android:id="@+id/editTextUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text"
+            android:ems="10"
+            android:hint="@string/editTextUsuario"
+            android:inputType="textEmailAddress">
+            <requestFocus />
+            
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/edit_text"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/editTextSenha" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="7pt"
+            android:paddingTop="7pt" >
+
+            <CheckBox
+                android:id="@+id/checkBoxSalvarSenha"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:height="1dp"
+                android:text="@string/checkBoxSalvarSenha"
+                android:textSize="8pt" />
+
+            <Button
+                android:id="@+id/buttonCancelar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/botao_cadastrar"
+                android:onClick="onCLickCadastrar"
+                android:text="@string/buttonCadastrar"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonEntrar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/botao"
+            android:onClick="onCLickEntrar"
+            android:text="@string/buttonEntrar" />
+
+    </LinearLayout>
+
+</ScrollView>
